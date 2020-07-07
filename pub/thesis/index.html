@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Type Inference, Haskell and Dependent Types</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+  <h1>Type Inference, Haskell and Dependent Types</h1>
+
+  <p><strong>
+    <a href="../../">Adam Gundry</a>
+  </strong></p>
+
+  <p>
+This thesis studies questions of type inference, unification and
+elaboration for languages that combine dependent type theory and
+functional programming.  Languages such as modern Haskell have very
+expressive type systems, allowing the programmer a great deal of
+freedom.  These require advanced type inference and unification
+algorithms to reconstruct details that were left implicit, and
+suitable representation of the evidence delivered by such algorithms.
+</p>
+
+<p>
+The first part proposes an approach to unification and type inference,
+based on information increase in dependency-ordered contexts, and
+keeping careful track of variable scope.  Two existing systems are
+reviewed: the Hindley-Milner type system, and units of measure in the
+style of Kennedy.  Subtle issues relating to let-generalisation become
+clearer as a result.  Using the same approach, an algorithm is
+described for Miller pattern unification in a full-spectrum dependent
+type theory, forming a foundation for the elaboration of dependently
+typed languages.
+</p>
+
+<p>
+The second part introduces <em>inch</em>, a language that extends Haskell with
+type-level data and functions, and dependent product types.
+Type-level numbers and arithmetic operations are specifically
+considered, as a particularly useful source of applications, such as
+the perennial example of vectors (length-indexed lists).  The
+increased expressivity in the source language is matched by a suitable
+core language of <em>evidence</em>, into which <em>inch</em> programs can be
+translated.  This language is based on System F<sub>C</sub>, the existing core
+language used by GHC, and adapted to clarify the relationships between
+the type and term levels.  It gives a coherent operational semantics
+to both levels, allowing shared data and dependent functions, but
+retaining a clear phase distinction.  The contextual approach of the
+first part of the thesis is used to specify the elaboration of <em>inch</em>
+into the <em>evidence</em> language, and applications of <em>inch</em> based on
+type-level arithmetic are demonstrated.
+  </p>
+
+  <p>
+    <strong>Important note:</strong>
+    there is an error in the pattern unification algorithm described in Chapter 4; see
+    <a href="thesis-errata.txt">the errata</a>,
+    updated 9th August 2014
+  </p>
+
+  <p>
+    <strong>Final accepted version:</strong>
+    <a href="thesis-2013-12-03.pdf">Type Inference, Haskell and Dependent Types</a>,
+    updated 3rd December 2013
+  </p>
+
+  <p>
+    <strong>Haskell code:</strong>
+    <a href="https://github.com/adamgundry/type-inference">type-inference on GitHub</a>,
+    <a href="https://github.com/adamgundry/inch">prototype implementation of <em>inch</em> on GitHub</a>
+  </p>
+
+  <p>
+    <a href="../../">Up to Adam Gundry's home page</a>
+  </p>
+</body>
+</html>

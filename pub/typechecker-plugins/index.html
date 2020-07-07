@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>A Typechecker Plugin for Units of Measure</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+  <h1>A Typechecker Plugin for Units of Measure</h1>
+  <h2>Domain-specific constraint solving in GHC Haskell</h2>
+
+  <p><strong>
+    <a href="../../">Adam Gundry</a>
+  </strong></p>
+
+  <p>
+    Typed functional programming and units of measure are a natural
+    combination, as F# ably demonstrates. However, encoding
+    statically-checked units in Haskell’s type system leads to
+    inevitable disappointment with the usability of the resulting
+    system. Extending the language itself would produce a much better
+    result, but it would be a lot of work! In this paper, I
+    demonstrate how typechecker plugins in the Glasgow Haskell
+    Compiler allow users to define domain-specific constraint solving
+    behaviour, making it possible to implement units of measure as a
+    type system extension without rebuilding the compiler. This paves
+    the way for a more modular treatment of constraint solving in GHC.
+  </p>
+
+  <p>
+    <strong>Latest version:</strong>
+    <a href="typechecker-plugins-2015-07-17.pdf">A Typechecker Plugin for Units of Measure (PDF)</a>,
+    updated 17th July 2015,
+    to appear in <a href="https://www.haskell.org/haskell-symposium/2015/">Haskell Symposium 2015</a>
+
+  <span class="legal">
+&copy; Adam Gundry 2015. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. The definitive Version of Record will appear in the proceedings of the Haskell Symposium 2015, <a href="http://dx.doi.org/10.1145/2804302.2804305">doi:10.1145/2804302.2804305</a>.</span>
+  </p>
+
+  <p>
+    <strong>Previous version:</strong>
+    <a href="typechecker-plugins-2015-03-03.pdf">A Typechecker Plugin for Units of Measure (PDF)</a>,
+    updated 3rd March 2015,
+    submitted to <a href="https://www.haskell.org/haskell-symposium/2015/">Haskell Symposium 2015</a>
+  </p>
+
+  <p>
+    <strong>Haskell code:</strong>
+    <a href="https://github.com/adamgundry/uom-plugin/">uom-plugin on GitHub</a>
+  </p>
+
+  <p>
+    <a href="../../">Up to Adam Gundry's home page</a>
+  </p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Type Inference for Units of Measure</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+  <h1>Type Inference for Units of Measure</h1>
+
+  <p><strong>
+    <a href="../../">Adam Gundry</a>
+  </strong></p>
+
+  <p>
+    Units of measure are an example of a type system extension
+    involving a nontrivial equational theory. Type inference for such
+    an extension requires equational unification. This complicates the
+    generalisation step required for let-polymorphism in ML-style
+    languages, as variable occurrence does not imply
+    dependency. Previous work on units of measure (by Kennedy in
+    particular) integrated free abelian group unification into the
+    Damas-Milner type inference algorithm, but struggled with
+    generalisation. I describe an approach to problem solving based on
+    incremental minimal-commitment refinements in a structured
+    context, and hence present abelian group unification and type
+    unification algorithms which make type generalisation direct.
+  </p>
+
+  <p>
+    <strong>Latest version:</strong>
+    <a href="unit-inference-2011-06-24.pdf">Type Inference for Units of Measure (PDF)</a>,
+    updated 24th June 2011,
+    rejected from <a href="http://dalila.sip.ucm.es/tfp11/">TFP 2011</a> post-proceedings
+  </p>
+
+  <p>
+    <strong>Supplementary material:</strong>
+    <a href="unit-inference-2011-06-24-techreport.pdf">Type Inference for Units of Measure - Technical Report (PDF)</a>,
+    updated 24th June 2011
+  </p>
+
+  <p>
+    <strong>Haskell code:</strong>
+    <a href="units-of-measure-2011-06-24.tar.gz">download the source tarball</a>
+  </p>
+
+  <p>
+    <strong>Slides:</strong>
+    <a href="tfp-talk-2011-05-16.pdf">TFP talk (PDF)</a> on 16th May 2011,
+    <a href="spls-talk-2011-03-15.pdf">SPLS talk (PDF)</a> on 15th March 2011.
+  </p>
+
+  <p>
+    <strong>Previous version:</strong>
+    <a href="unit-inference-2011-04-01.pdf">Type Inference for Units of Measure (PDF)</a>,
+    updated 1st April 2011, published
+    in <a href="http://dalila.sip.ucm.es/tfp11/">TFP 2011</a>
+    pre-proceedings
+  </p>
+
+  <p>
+    <a href="../../">Up to Adam Gundry's home page</a>
+  </p>
+</body>
+</html>

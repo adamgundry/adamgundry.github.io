@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Type Inference in Context</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+  <h1>Type Inference in Context</h1>
+
+  <p><strong>
+    <a href="../../">Adam Gundry</a>,
+    <a href="https://personal.cis.strath.ac.uk/conor.mcbride/">Conor McBride</a> and
+    <a href="http://homepages.inf.ed.ac.uk/jmckinna/">James McKinna</a>
+  </strong></p>
+
+  <p>
+    We consider the problems of first-order unification and type
+    inference from a very general perspective on problem-solving,
+    namely that of information increase in the problem context.  This
+    leads to a powerful technique for implementing type inference
+    algorithms.  We describe a unification algorithm and illustrate
+    the technique by applying it to the familiar Hindley-Milner type
+    system, but it can be applied to more advanced type systems.  The
+    algorithms depend on a well-founded invariant on contexts in which
+    type variable bindings and type-schemes for terms may depend only
+    on bindings appearing earlier in the context.  We ensure that
+    unification produces a most general unifier, and that type
+    inference produces principal types, by advancing definitions
+    earlier in the context only when absolutely necessary.
+  </p>
+
+  <p>
+    <strong>Latest version:</strong>
+    <a href="type-inference-2010-07-30.pdf">Type Inference in Context (PDF)</a>
+    and
+    <a href="type-inference-2010-07-30.lhs">source code (LHS)</a>,
+    updated 30th July 2010, appeared at
+    <a href="http://cs.ioc.ee/msfp/msfp2010/">MSFP 2010</a>
+
+  <span class="legal">
+&copy; ACM 2010. This is the author's version of the work. It is posted here for your personal use. Not for redistribution. The definitive Version of Record can be found in the Proceedings of the third ACM SIGPLAN workshop on Mathematically Structured Functional Programming, <a href="http://dx.doi.org/10.1145/1863597.1863608">doi:10.1145/1863597.1863608</a>.</span>
+  </p>
+
+  <p>
+    <strong>Slides:</strong>
+    <a href="msfp-talk-2010-09-25.pdf">MSFP talk (PDF)</a>
+    on 25th September 2010
+  </p>
+
+  <p>
+    <strong>Previous version:</strong>
+    <a href="type-inference-2010-04-23.pdf">Type Inference in Context (PDF)</a>
+    and
+    <a href="type-inference-2010-04-23.lhs">source code (LHS)</a>,
+    updated 23rd April 2010
+  </p>
+
+  <p>
+    <a href="../../">Up to Adam Gundry's home page</a>
+  </p>
+</body>
+</html>

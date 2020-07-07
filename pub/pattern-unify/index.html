@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>A tutorial implementation of dynamic pattern unification</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+  <h1>A tutorial implementation of dynamic pattern unification</h1>
+
+  <p><strong>
+    <a href="../../">Adam Gundry</a> and
+    <a href="https://personal.cis.strath.ac.uk/conor.mcbride/">Conor McBride</a>
+  </strong></p>
+
+  <p>
+    A higher-order unification algorithm is an essential component of
+    a dependently typed programming language implementation, and
+    understanding its capabilities is important if dependently typed
+    programmers are to become productive.  Miller showed that, for
+    simply typed &lambda;-terms in the pattern fragment (where
+    metavariables are applied to spines of distinct bound variables),
+    unification is decidable and most general unifiers exist.  We
+    describe an algorithm for pattern unification in a full-spectrum
+    dependent type theory with dependent pairs (&Sigma;-types).  The
+    algorithm exploits heterogeneous equality and a novel concept of
+    'twin' free variables to handle dependency.  Moreover, it supports
+    dynamic management of constraints, postponing equations that fall
+    outside the pattern fragment in case other equations make them
+    simpler.  We aim to make sense both to language implementors and
+    users, and to this end present our algorithm as a Haskell program.
+  </p>
+
+  <p>
+    <strong>Important note:</strong> if you are interested in this
+    paper, you may be better off reading chapter 4
+    of <a href="../thesis/">my thesis</a>, which presents this
+    material more thoroughly.  On the other hand, the paper is
+    substantially more compact.  There is an error in the description
+    of pruning (in both the paper and thesis), described in the
+    <a href="../thesis/thesis-errata.txt">thesis errata</a>.
+  </p>
+
+  <p>
+    <strong>Latest version:</strong>
+    <a href="pattern-unification-2012-07-10.pdf">A tutorial implementation of dynamic pattern unification (PDF)</a>,
+    updated 10th July 2012,
+    rejected from <a href="http://popl.mpi-sws.org/2013/">POPL 2013</a>
+  </p>
+
+
+  <p>
+    <strong>Haskell code:</strong>
+    <a href="pattern-unification-2012-07-10.tar.gz">download the source tarball</a>
+    or view <a href="https://github.com/adamgundry/type-inference/tree/master/src/PatternUnify">code from thesis on GitHub</a>
+  </p>
+
+  <p>
+    <a href="../../">Up to Adam Gundry's home page</a>
+  </p>
+</body>
+</html>

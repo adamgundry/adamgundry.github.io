@@ -1,0 +1,27 @@
+h1 { padding-bottom: 0.2em; border-bottom: medium solid; }
+.footer { border-top: thin solid; }
+
+body { background: white; color: black; padding: 1em 5em; }
+:link { background: transparent; color: blue; }
+:visited { background: transparent; color: purple; }
+:link:hover, :visited:hover, :link:active, :visited:active
+{ background: transparent; color: red; }
+h1 { background: transparent; color: #000099; border-color: #333333; }
+dt { background: transparent; color: #000099; }
+
+.footer { padding: 0.1em 0.2em; }
+dt { margin-top: 0.5em; }
+
+body { font-family: Verdana, Arial, sans-serif; }
+h1 { font-weight: 100; }
+dt { font-weight: bold; }
+.footer { font-size: smaller; font-style: italic; }
+
+p img { float: right; }
+
+.index h2 { margin-top: 1.2em; }
+.index h3 { margin-top: 3em; }
+
+li { margin: 0.3em; }
+
+.legal { font-size: x-small }
