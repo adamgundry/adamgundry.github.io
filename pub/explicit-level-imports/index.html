@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Explicit Level Imports</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body>
+  <h1>Explicit Level Imports</h1>
+
+  <p><strong>
+    <a href="https://mpickering.github.io/">Matthew Pickering</a>,
+    <a href="https://alt-romes.github.io/">Rodrigo Mesquita</a> and
+    <a href="../../">Adam Gundry</a>
+  </strong></p>
+
+  <p>
+    Cross-stage persistence rules are commonly admitted in multi-
+    stage programming languages. These rules codify the assumption that all
+    module and package dependencies are available at all stages. However,
+    in practice, only a small number of dependencies may be needed at each
+    particular stage.
+  </p>
+  <p>
+    This paper introduces Explicit Level Imports, a mechanism which gives
+    programmers precise control about which dependencies are required at
+    each stage. Imports are annotated with a modifier which brings identifiers
+    into scope at a specific level. This precision means it is straightforward
+    for the compiler to work out what is exactly needed at each stage, and
+    only provide that. The result is faster compilation times and the potential
+    for improved cross-compilation support.
+  </p>
+  <p>
+    We have implemented these ideas in GHC Haskell, consider a wide variety
+    of practical considerations in the design, and finally demonstrate that the
+    feature solves a real-world issue in a pragmatic way.
+  </p>
+
+  <p>
+    <strong>Latest version:</strong>
+    <a href="explicit-level-imports.pdf">Explicit Level Imports (PDF)</a>
+    in TFP 2025 post-proceedings (winner of the John McCarthy prize for best paper)
+
+  <p>
+    <a href="../../">Up to Adam Gundry's home page</a>
+  </p>
+</body>
+</html>
